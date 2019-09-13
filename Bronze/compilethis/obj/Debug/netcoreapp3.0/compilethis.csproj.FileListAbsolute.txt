@@ -1,0 +1,11 @@
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\Achievments\Bronze\compilethis\bin\Debug\netcoreapp3.0\compilethis.exe
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\Achievments\Bronze\compilethis\bin\Debug\netcoreapp3.0\compilethis.deps.json
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\Achievments\Bronze\compilethis\bin\Debug\netcoreapp3.0\compilethis.runtimeconfig.json
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\Achievments\Bronze\compilethis\bin\Debug\netcoreapp3.0\compilethis.runtimeconfig.dev.json
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\Achievments\Bronze\compilethis\bin\Debug\netcoreapp3.0\compilethis.dll
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\Achievments\Bronze\compilethis\bin\Debug\netcoreapp3.0\compilethis.pdb
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\Achievments\Bronze\compilethis\obj\Debug\netcoreapp3.0\compilethis.csprojAssemblyReference.cache
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\Achievments\Bronze\compilethis\obj\Debug\netcoreapp3.0\compilethis.AssemblyInfoInputs.cache
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\Achievments\Bronze\compilethis\obj\Debug\netcoreapp3.0\compilethis.AssemblyInfo.cs
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\Achievments\Bronze\compilethis\obj\Debug\netcoreapp3.0\compilethis.dll
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\Achievments\Bronze\compilethis\obj\Debug\netcoreapp3.0\compilethis.pdb

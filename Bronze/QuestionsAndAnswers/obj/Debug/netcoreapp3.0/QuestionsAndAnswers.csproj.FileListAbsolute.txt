@@ -1,0 +1,11 @@
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\achievements\Bronze\QuestionsAndAnswers\bin\Debug\netcoreapp3.0\QuestionsAndAnswers.exe
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\achievements\Bronze\QuestionsAndAnswers\bin\Debug\netcoreapp3.0\QuestionsAndAnswers.deps.json
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\achievements\Bronze\QuestionsAndAnswers\bin\Debug\netcoreapp3.0\QuestionsAndAnswers.runtimeconfig.json
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\achievements\Bronze\QuestionsAndAnswers\bin\Debug\netcoreapp3.0\QuestionsAndAnswers.runtimeconfig.dev.json
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\achievements\Bronze\QuestionsAndAnswers\bin\Debug\netcoreapp3.0\QuestionsAndAnswers.dll
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\achievements\Bronze\QuestionsAndAnswers\bin\Debug\netcoreapp3.0\QuestionsAndAnswers.pdb
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\achievements\Bronze\QuestionsAndAnswers\obj\Debug\netcoreapp3.0\QuestionsAndAnswers.csprojAssemblyReference.cache
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\achievements\Bronze\QuestionsAndAnswers\obj\Debug\netcoreapp3.0\QuestionsAndAnswers.AssemblyInfoInputs.cache
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\achievements\Bronze\QuestionsAndAnswers\obj\Debug\netcoreapp3.0\QuestionsAndAnswers.AssemblyInfo.cs
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\achievements\Bronze\QuestionsAndAnswers\obj\Debug\netcoreapp3.0\QuestionsAndAnswers.dll
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\achievements\Bronze\QuestionsAndAnswers\obj\Debug\netcoreapp3.0\QuestionsAndAnswers.pdb

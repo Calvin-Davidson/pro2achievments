@@ -1,0 +1,11 @@
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\achievements\Bronze\InVariablesWeTrust\obj\Debug\netcoreapp3.0\InVariablesWeTrust.csprojAssemblyReference.cache
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\achievements\Bronze\InVariablesWeTrust\obj\Debug\netcoreapp3.0\InVariablesWeTrust.AssemblyInfoInputs.cache
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\achievements\Bronze\InVariablesWeTrust\obj\Debug\netcoreapp3.0\InVariablesWeTrust.AssemblyInfo.cs
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\achievements\Bronze\InVariablesWeTrust\bin\Debug\netcoreapp3.0\InVariablesWeTrust.exe
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\achievements\Bronze\InVariablesWeTrust\bin\Debug\netcoreapp3.0\InVariablesWeTrust.deps.json
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\achievements\Bronze\InVariablesWeTrust\bin\Debug\netcoreapp3.0\InVariablesWeTrust.runtimeconfig.json
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\achievements\Bronze\InVariablesWeTrust\bin\Debug\netcoreapp3.0\InVariablesWeTrust.runtimeconfig.dev.json
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\achievements\Bronze\InVariablesWeTrust\bin\Debug\netcoreapp3.0\InVariablesWeTrust.dll
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\achievements\Bronze\InVariablesWeTrust\bin\Debug\netcoreapp3.0\InVariablesWeTrust.pdb
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\achievements\Bronze\InVariablesWeTrust\obj\Debug\netcoreapp3.0\InVariablesWeTrust.dll
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\achievements\Bronze\InVariablesWeTrust\obj\Debug\netcoreapp3.0\InVariablesWeTrust.pdb
