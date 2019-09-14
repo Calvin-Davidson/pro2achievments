@@ -1,0 +1,10 @@
+appel
+peer
+pizza
+banaan
+ruimte
+schip
+aardappel
+snoep
+kaas
+fiets
