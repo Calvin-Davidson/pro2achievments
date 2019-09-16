@@ -126,11 +126,7 @@ namespace HangMan_Game
             }
         }
         if (CorrectChars == wordChars.Count) {
-
-                HuidigWord = 0;
-                FoutenLetters = 0;
-                CorrectChecker = 0;
-                CorrectChars = 0;
+                    setAllNull();
                     Console.Clear();
                     Console.WriteLine("Het helewoord is goed. goed gedaan. het woord was:\n" + TheWord);
                     Console.WriteLine("\n\nDruk op enter om de game te sluiten");
@@ -142,25 +138,15 @@ namespace HangMan_Game
         //zet alle nummers weer naar 0
         if (enterlenght == 0) {
             //Deze zijn hier puur zodat het niet de rest kan doen
-
                 //reset de int weer tegen out of bound exeption
-                HuidigWord = 0;
-                FoutenLetters = 0;
-                CorrectChecker = 0;
-                CorrectChars = 0;
+                setAllNull();
         } else if (enterlenght != 1 && enterlenght != 0) {
             //Deze zijn hier puur zodat het niet de rest kan doen
                 
                 //reset de int weer tegen out of bound exeption
-                HuidigWord = 0;
-                FoutenLetters = 0;
-                CorrectChecker = 0;
-                CorrectChars = 0;
+                setAllNull();
         } else if (gegevenletters.Contains(enteredLetter)) {
-                HuidigWord = 0;
-                FoutenLetters = 0;
-                CorrectChecker = 0;
-                CorrectChars = 0;
+                setAllNull();
                 System.Threading.Thread.Sleep(2000);
                 Console.Clear();
         } else if (FoutenLetters == wordChars.Count) {
@@ -168,31 +154,27 @@ namespace HangMan_Game
             gegevenletters.Add(enteredLetter);
             livesLeft--;
             System.Threading.Thread.Sleep(2000);
-
-                HuidigWord = 0;
-                FoutenLetters = 0;
-                CorrectChecker = 0;
-                CorrectChars = 0;
+            setAllNull();
             Console.Clear();
         } else {
             Console.WriteLine("Het was goed");
                  System.Threading.Thread.Sleep(2000);
-
-                HuidigWord = 0;
-                FoutenLetters = 0;
-                CorrectChecker = 0;
-                CorrectChars = 0;
-
+                setAllNull();
                  Console.Clear();
                 }
             }
             
             if (livesLeft == 0) {
                 Console.WriteLine("Je levens zijn op. Jammer dat je het niet gehaald hebt, het juiste woord was:\n" + TheWord);
-
                 Console.WriteLine("\n\nDruk op enter om de game te stoppen");
                 Console.ReadLine();
             }
+        }
+    static void setAllNull() {
+                HuidigWord = 0;
+                FoutenLetters = 0;
+                CorrectChecker = 0;
+                CorrectChars = 0;
         }
     }
 }
