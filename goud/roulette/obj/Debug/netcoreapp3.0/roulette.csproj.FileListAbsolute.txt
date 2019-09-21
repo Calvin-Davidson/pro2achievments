@@ -1,0 +1,11 @@
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\pro2achievments\goud\roulette\bin\Debug\netcoreapp3.0\roulette.exe
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\pro2achievments\goud\roulette\bin\Debug\netcoreapp3.0\roulette.deps.json
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\pro2achievments\goud\roulette\bin\Debug\netcoreapp3.0\roulette.runtimeconfig.json
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\pro2achievments\goud\roulette\bin\Debug\netcoreapp3.0\roulette.runtimeconfig.dev.json
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\pro2achievments\goud\roulette\bin\Debug\netcoreapp3.0\roulette.dll
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\pro2achievments\goud\roulette\bin\Debug\netcoreapp3.0\roulette.pdb
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\pro2achievments\goud\roulette\obj\Debug\netcoreapp3.0\roulette.csprojAssemblyReference.cache
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\pro2achievments\goud\roulette\obj\Debug\netcoreapp3.0\roulette.AssemblyInfoInputs.cache
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\pro2achievments\goud\roulette\obj\Debug\netcoreapp3.0\roulette.AssemblyInfo.cs
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\pro2achievments\goud\roulette\obj\Debug\netcoreapp3.0\roulette.dll
+C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\pro2achievments\goud\roulette\obj\Debug\netcoreapp3.0\roulette.pdb

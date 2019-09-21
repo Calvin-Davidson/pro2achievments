@@ -11,7 +11,7 @@ namespace HangMan_Game
 
         static List<string> gegevenletters = new List<string>();
 
-        static int livesLeft;
+        static int livesLeft = 5;
         static int FoutenLetters = 0;
         static int HuidigWord = 0;
         static int CorrectChecker = 0;
@@ -24,7 +24,6 @@ namespace HangMan_Game
             Console.WriteLine("#                           HANG MAN                              #");
             Console.WriteLine("#                     PRESS ANY KEY AND ENTER                     #");
             Console.WriteLine("###################################################################");
-            livesLeft = 5;
             Console.ReadLine();
 
             Console.Clear();
@@ -103,8 +102,6 @@ namespace HangMan_Game
             } else if (gegevenletters.Contains(enteredLetter)) {
                 Console.WriteLine("Het opgegeven letter is al eerder ingevoert let wel op he!");
             }
-    
-
             enteredLetter.ToString().ToCharArray();
         foreach (String s in wordChars) {
             if (enteredLetter == s) {
