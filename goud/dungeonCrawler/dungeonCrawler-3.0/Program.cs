@@ -110,8 +110,8 @@ namespace dungeonCrawler
           private static void SetTimer()
    {
         // Create a timer with a two second interval.
-        Console.CursorVisible = false;
-        SPACEtimer = new System.Timers.Timer(100);
+        SPACEtimer = new System.Timers.Timer(200);
+        // Hook up the Elapsed event for the timer. 
         SPACEtimer.Elapsed += OnTimedEvent;
         SPACEtimer.AutoReset = true;
         SPACEtimer.Enabled = true;
@@ -120,7 +120,7 @@ namespace dungeonCrawler
         private static void OnTimedEvent(Object source, ElapsedEventArgs e)
     {
         Console.Clear();
-        System.Threading.Thread.Sleep(50);
+        System.Threading.Thread.Sleep(100);
         Console.WriteLine("PRESS SPACE TO START",e.SignalTime);
             }
         }
