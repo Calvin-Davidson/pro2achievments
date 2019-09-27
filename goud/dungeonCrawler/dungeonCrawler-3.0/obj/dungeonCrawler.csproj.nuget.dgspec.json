@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\calvi\\OneDrive\\Documenten\\ma\\bewijzenmap\\periode1.1\\pro2\\pro2achievments\\goud\\dungeonCrawler-3.0\\dungeonCrawler.csproj": {}
+    "C:\\Users\\calvi\\OneDrive\\Documenten\\ma\\bewijzenmap\\periode1.1\\pro2\\pro2achievments\\goud\\dungeonCrawler\\dungeonCrawler-3.0\\dungeonCrawler.csproj": {}
   },
   "projects": {
-    "C:\\Users\\calvi\\OneDrive\\Documenten\\ma\\bewijzenmap\\periode1.1\\pro2\\pro2achievments\\goud\\dungeonCrawler-3.0\\dungeonCrawler.csproj": {
+    "C:\\Users\\calvi\\OneDrive\\Documenten\\ma\\bewijzenmap\\periode1.1\\pro2\\pro2achievments\\goud\\dungeonCrawler\\dungeonCrawler-3.0\\dungeonCrawler.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\calvi\\OneDrive\\Documenten\\ma\\bewijzenmap\\periode1.1\\pro2\\pro2achievments\\goud\\dungeonCrawler-3.0\\dungeonCrawler.csproj",
+        "projectUniqueName": "C:\\Users\\calvi\\OneDrive\\Documenten\\ma\\bewijzenmap\\periode1.1\\pro2\\pro2achievments\\goud\\dungeonCrawler\\dungeonCrawler-3.0\\dungeonCrawler.csproj",
         "projectName": "dungeonCrawler",
-        "projectPath": "C:\\Users\\calvi\\OneDrive\\Documenten\\ma\\bewijzenmap\\periode1.1\\pro2\\pro2achievments\\goud\\dungeonCrawler-3.0\\dungeonCrawler.csproj",
+        "projectPath": "C:\\Users\\calvi\\OneDrive\\Documenten\\ma\\bewijzenmap\\periode1.1\\pro2\\pro2achievments\\goud\\dungeonCrawler\\dungeonCrawler-3.0\\dungeonCrawler.csproj",
         "packagesPath": "C:\\Users\\calvi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\calvi\\OneDrive\\Documenten\\ma\\bewijzenmap\\periode1.1\\pro2\\pro2achievments\\goud\\dungeonCrawler-3.0\\obj\\",
+        "outputPath": "C:\\Users\\calvi\\OneDrive\\Documenten\\ma\\bewijzenmap\\periode1.1\\pro2\\pro2achievments\\goud\\dungeonCrawler\\dungeonCrawler-3.0\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100-preview8-013656\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

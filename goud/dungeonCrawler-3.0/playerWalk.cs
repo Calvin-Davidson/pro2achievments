@@ -9,153 +9,207 @@ namespace dungeonCrawler
             Char AchteruitChar = Program.grid.GetFrom(Program.playerM.playerX, Program.playerM.playerY+1);
             Char RechtsChar = Program.grid.GetFrom(Program.playerM.playerX+1, Program.playerM.playerY);
             Char LinksChar = Program.grid.GetFrom(Program.playerM.playerX-1, Program.playerM.playerY);
+            Boolean canwalk = false;
             switch(direction.ToString()) {
                 case "Vooruit":
-               if (VooruitChar == 'W') {
-                  win();
-               } else if (VooruitChar == 'M') {
-                   monsters.fight(Program.playerM.playerX, Program.playerM.playerY-1);
-                    Console.Clear();
-                    loader.loadMap(Program.gameM.theMap);
-                    loader.loadHP();
-               } else if (VooruitChar == '$') {
-            Program.grid.Replace(Program.playerM.playerX, Program.playerM.playerY, ' ');
-            Program.grid.Replace(Program.playerM.playerX, Program.playerM.playerY-1, 'P');
-            Program.playerM.playerY--;
-            Program.playerM.playercoins += 5;
-            Console.Clear();
-            loader.loadMap(Program.gameM.theMap);
-            loader.loadHP();
-               } else if (VooruitChar == '#') {
-                   return;
-               } else if (VooruitChar == 'H') {
-            Program.grid.Replace(Program.playerM.playerX, Program.playerM.playerY, ' ');
-            Program.grid.Replace(Program.playerM.playerX, Program.playerM.playerY-1, 'P');
-            Program.playerM.playerHP = Program.playerM.playerHP + 50;
-            Program.playerM.playerY--;
-            Console.Clear();
-            loader.loadMap(Program.gameM.theMap);
-            loader.loadHP();                   
-               } else {
-            Program.grid.Replace(Program.playerM.playerX, Program.playerM.playerY, ' ');
-            Program.grid.Replace(Program.playerM.playerX, Program.playerM.playerY-1, 'P');
-            Program.playerM.playerY--;
-            Console.Clear();
-            loader.loadMap(Program.gameM.theMap);
-            loader.loadHP();
-            }
+                switch(VooruitChar) {
+                    case 'W':
+                    //Je wint
+                    win();
+                    break;
+                    case 'M':
+                    //Je komt een monster tegen
+                    monsters.fight(Program.playerM.playerX, Program.playerM.playerY-1);
+                    break;
+                    case 'H':
+                    canwalk = true;
+                    Program.playerM.playerHP += 75;
+                    break;
+                    case '$':
+                    //Je pakt geld op
+                    canwalk = true;
+                    Program.playerM.playercoins += 5;
+                    break;
+                    case 'K':
+                    canwalk = true;
+                    Program.Inventory.Add("Key");
+                    break;
+                    case 'D':
+                    //Een deur waar je een sleutel nodig hebt
+                    if (Program.Inventory.Contains("Key")) {
+                    canwalk = true;
+                    } else {
+                    Console.Beep(40, 100);
+                    }
+                    break;
+                    case '#':
+                    //Een muur doet niks
+                    canwalk = false;
+                    break;
+                    default:
+                    canwalk = true;
+                    break;
+                }
+               if (canwalk == true) {
+                Program.grid.Replace(Program.playerM.playerX, Program.playerM.playerY-1, 'P');
+                Program.grid.Replace(Program.playerM.playerX, Program.playerM.playerY, ' ');
+                Program.playerM.playerY--;
+                Console.Clear();
+                loader.loadMap();
+                loader.loadHP();
+               }
                break;
                 case "Achteruit":
-                if (AchteruitChar == 'W') {
-                   win();
-               } else if (AchteruitChar == 'M') {
+                switch(AchteruitChar) {
+                    case 'W':
+                    //Je wint
+                    win();
+                    break;
+                    case 'M':
+                    //Je komt een monster tegen
                     monsters.fight(Program.playerM.playerX, Program.playerM.playerY+1);
-                    Console.Clear();
-                    loader.loadMap(Program.gameM.theMap);
-                    loader.loadHP();
-               } else if (AchteruitChar == '$') {
-            Program.grid.Replace(Program.playerM.playerX, Program.playerM.playerY, ' ');
-            Program.grid.Replace(Program.playerM.playerX, Program.playerM.playerY+1, 'P');
-            Program.playerM.playerY++;
-            Program.playerM.playercoins += 5;
-            Console.Clear();
-            loader.loadMap(Program.gameM.theMap);
-            loader.loadHP();
-               } else if (AchteruitChar == '#') {
-                   return;
-            } else if (AchteruitChar == 'H') {
-            Program.grid.Replace(Program.playerM.playerX, Program.playerM.playerY, ' ');
-            Program.grid.Replace(Program.playerM.playerX, Program.playerM.playerY+1, 'P');
-            Program.playerM.playerHP = Program.playerM.playerHP + 50;
-            Program.playerM.playerY++;
-            Console.Clear();
-            loader.loadMap(Program.gameM.theMap);
-            loader.loadHP();
-               } else {
-            Program.grid.Replace(Program.playerM.playerX, Program.playerM.playerY, ' ');
-            Program.grid.Replace(Program.playerM.playerX, Program.playerM.playerY+1, 'P');
-            Program.playerM.playerY++;
-            Console.Clear();
-            loader.loadMap(Program.gameM.theMap);
-            loader.loadHP();
+                    break;
+                    case 'H':
+                    canwalk = true;
+                    Program.playerM.playerHP += 75;
+                    break;
+                    case '$':
+                    //Je pakt geld op
+                    canwalk = true;
+                    Program.playerM.playercoins += 5;
+                    break;
+                    case 'K':
+                    //Je pakt een key op
+                    canwalk = true;
+                    Program.Inventory.Add("Key");
+                    break;
+                    case 'D':
+                    //Een deur waar je een sleutel nodig hebt
+                    if (Program.Inventory.Contains("Key")) {
+                    canwalk = true;
+                    } else {
+                    Console.Beep(40, 100);
+                    }
+                    break;
+                    case '#':
+                    //Een muur doet niks
+                    canwalk = false;
+                    break;
+                    default:
+                    canwalk = true;
+                    break;
+                }
+               if (canwalk == true) {
+                Program.grid.Replace(Program.playerM.playerX, Program.playerM.playerY+1, 'P');
+                Program.grid.Replace(Program.playerM.playerX, Program.playerM.playerY, ' ');
+                Program.playerM.playerY++;
+                Console.Clear();
+                loader.loadMap();
+                loader.loadHP();
                }
-                break;
+               break;
                 case "Rechts":
-                if (RechtsChar == 'W') {
-                   win();
-               } else if (RechtsChar == 'M') {
+                switch(RechtsChar) {
+                    case 'W':
+                    //Je wint
+                    win();
+                    break;
+                    case 'M':
+                    //Je komt een monster tegen
                     monsters.fight(Program.playerM.playerX+1, Program.playerM.playerY);
-                    Console.Clear();
-                    loader.loadMap(Program.gameM.theMap);
-                    loader.loadHP();
-                    
-               } else if (RechtsChar == '$') {
-            Program.grid.Replace(Program.playerM.playerX, Program.playerM.playerY, ' ');
-            Program.grid.Replace(Program.playerM.playerX+1, Program.playerM.playerY, 'P');
-            Program.playerM.playerX++;
-            Program.playerM.playercoins += 5;
-            Console.Clear();
-            loader.loadMap(Program.gameM.theMap);
-            loader.loadHP();
-               } else if (RechtsChar == '#') {
-                   return;
-                } else if (RechtsChar == 'H') {
-            Program.grid.Replace(Program.playerM.playerX, Program.playerM.playerY, ' ');
-            Program.grid.Replace(Program.playerM.playerX+1, Program.playerM.playerY, 'P');
-            Program.playerM.playerHP = Program.playerM.playerHP + 50;
-            Program.playerM.playerX++;
-            Console.Clear();
-            loader.loadMap(Program.gameM.theMap);
-            loader.loadHP();
-               } else {
-            Program.grid.Replace(Program.playerM.playerX, Program.playerM.playerY, ' ');
-            Program.grid.Replace(Program.playerM.playerX+1, Program.playerM.playerY, 'P');
-            Program.playerM.playerX++;
-            Console.Clear();
-            loader.loadMap(Program.gameM.theMap);
-            loader.loadHP();
+                    break;
+                    case 'H':
+                    canwalk = true;
+                    Program.playerM.playerHP += 75;
+                    break;
+                    case '$':
+                    //Je pakt geld op
+                    canwalk = true;
+                    Program.playerM.playercoins += 5;
+                    break;
+                    case 'K':
+                    //Je pakt een key op
+                    canwalk = true;
+                    Program.Inventory.Add("Key");
+                    break;
+                    case 'D':
+                    //Een deur waar je een sleutel nodig hebt
+                    if (Program.Inventory.Contains("Key")) {
+                    canwalk = true;
+                    } else {
+                    Console.Beep(40, 100);
+                    }
+                    break;
+                    case '#':
+                    //Een muur doet niks
+                    canwalk = false;
+                    break;
+                    default:
+                    canwalk = true;
+                    break;
+                }
+               if (canwalk == true) {
+                Program.grid.Replace(Program.playerM.playerX+1, Program.playerM.playerY, 'P');
+                Program.grid.Replace(Program.playerM.playerX, Program.playerM.playerY, ' ');
+                Program.playerM.playerX++;
+                Console.Clear();
+                loader.loadMap();
+                loader.loadHP();
                }
-                break;
+               break;
                 case "Links":
-                if (LinksChar == 'W') {
-                   win();
-               } else if (LinksChar == 'M') {
-                    monsters.fight(Program.playerM.playerX-1, Program.playerM.playerY-1);
-                    Console.Clear();
-                    loader.loadMap(Program.gameM.theMap);
-                    loader.loadHP();
-               } else if (LinksChar == '$') {
-            Program.grid.Replace(Program.playerM.playerX, Program.playerM.playerY, ' ');
-            Program.grid.Replace(Program.playerM.playerX-1, Program.playerM.playerY, 'P');
-            Program.playerM.playerX--;
-            Program.playerM.playercoins += 5;
-            Console.Clear();
-            loader.loadMap(Program.gameM.theMap);
-            loader.loadHP();
-            } else if (LinksChar == '#') {
-                   return;
-            } else if (LinksChar == 'H') {
-            Program.grid.Replace(Program.playerM.playerX, Program.playerM.playerY, ' ');
-            Program.grid.Replace(Program.playerM.playerX-1, Program.playerM.playerY, 'P');
-            Program.playerM.playerHP = Program.playerM.playerHP + 50;
-            Program.playerM.playerX--;
-            Console.Clear();
-            loader.loadMap(Program.gameM.theMap);
-            loader.loadHP();
-               } else {
-            Program.grid.Replace(Program.playerM.playerX, Program.playerM.playerY, ' ');
-            Program.grid.Replace(Program.playerM.playerX-1, Program.playerM.playerY, 'P');
-            Program.playerM.playerX--;
-            Console.Clear();
-            loader.loadMap(Program.gameM.theMap);
-            loader.loadHP();
+                    switch(LinksChar) {
+                    case 'W':
+                    //Je wint
+                    win();
+                    break;
+                    case 'M':
+                    //Je komt een monster tegen
+                    monsters.fight(Program.playerM.playerX-1, Program.playerM.playerY);
+                    break;
+                    case 'H':
+                    canwalk = true;
+                    Program.playerM.playerHP += 75;
+                    break;
+                    case '$':
+                    //Je pakt geld op
+                    canwalk = true;
+                    Program.playerM.playercoins += 5;
+                    break;
+                    case 'K':
+                    //Je pakt een key op
+                    canwalk = true;
+                    Program.Inventory.Add("Key");
+                    break;
+                    case 'D':
+                    //Een deur waar je een sleutel nodig hebt
+                    if (Program.Inventory.Contains("Key")) {
+                    canwalk = true;
+                    } else {
+                    Console.Beep(40, 100);
+                    }
+                    break;
+                    case '#':
+                    canwalk = false;
+                    break;
+                    default:
+                    canwalk = true;
+                    break;
+                }
+               if (canwalk == true) {
+                Program.grid.Replace(Program.playerM.playerX-1, Program.playerM.playerY, 'P');
+                Program.grid.Replace(Program.playerM.playerX, Program.playerM.playerY, ' ');
+                Program.playerM.playerX--;
+                Console.Clear();
+                loader.loadMap();
+                loader.loadHP();
                }
-                break;
+               break;
             }
         }
-                public static void win() {
-                    Console.Clear();
-                    Program.gameM.haswon = true;
+            public static void win() {
+                Console.Clear();
+                Program.gameM.haswon = true;
          }
     }
 }

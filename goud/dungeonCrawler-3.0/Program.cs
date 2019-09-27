@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Timers;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace dungeonCrawler
 {
@@ -9,21 +11,29 @@ namespace dungeonCrawler
         public static gridManager grid;
         public static gameManager gameM;
 
+        public static ArrayList Inventory = new ArrayList();
         private static System.Timers.Timer SPACEtimer;
 
             static void Main(string[] args)
         {
-
-            SetTimer();
-
+            Console.CursorVisible = false;
             //Maakt een nieuwe player
             playerM = new playerManager();
             gameM = new gameManager();
             grid = new gridManager();
-        	Console.Clear();
-            gridmaker.makegrids();
-            Console.Clear();
 
+
+        	Console.Clear();
+
+            gridMaker.MakeMaps();
+            playerManager.setPlayerLocation();
+            monsters.LoadMonsterArray();
+
+            Console.Clear();
+            
+            SetTimer();    
+
+            Console.Clear();        
             space:
             SPACEtimer.Start();
             
@@ -42,7 +52,9 @@ namespace dungeonCrawler
             goto space;
             }
         if (gameM.Started == true) {
-        loader.loadMap(gameM.theMap);
+            Console.Clear();
+            System.Threading.Thread.Sleep(100);
+            loader.loadMap();
             Console.WriteLine("Dungeon Crawler");
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Your Coins: " + playerM.playercoins);
@@ -78,6 +90,14 @@ namespace dungeonCrawler
                         Console.WriteLine("De game is gestopt");
                         return;
                     }
+                } else {
+                    Console.Clear();
+                    Console.WriteLine("Key not found");
+                    System.Threading.Thread.Sleep(500);
+                    Console.Clear();
+                    loader.loadMap();
+                    loader.loadHP();
+                    goto WALK;
                 }
             if (gameM.Started == true) {
                 goto WALK;
@@ -110,8 +130,8 @@ namespace dungeonCrawler
           private static void SetTimer()
    {
         // Create a timer with a two second interval.
-        Console.CursorVisible = false;
         SPACEtimer = new System.Timers.Timer(100);
+        // Hook up the Elapsed event for the timer. 
         SPACEtimer.Elapsed += OnTimedEvent;
         SPACEtimer.AutoReset = true;
         SPACEtimer.Enabled = true;
@@ -120,8 +140,10 @@ namespace dungeonCrawler
         private static void OnTimedEvent(Object source, ElapsedEventArgs e)
     {
         Console.Clear();
-        System.Threading.Thread.Sleep(50);
-        Console.WriteLine("PRESS SPACE TO START",e.SignalTime);
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("PRESS SPACE TO START");
+        Console.ResetColor();
+        System.Threading.Thread.Sleep(100);
             }
         }
     }

@@ -31,5 +31,19 @@ namespace dungeonCrawler
                 get { return HP; }
                 set { HP = value; }
         }
+        public static void setPlayerLocation() {
+                for(int y = 0; y < Program.grid.Get2DArray().GetLength(0); y++)
+            {
+                for(int x = 0; x < Program.grid.Get2DArray().GetLength(1); x++)
+                {
+                    if (Program.grid.Get2DArray()[y,x].Equals('P')) {
+                            Program.playerM.playerY = y;
+                            Program.playerM.playerX = x;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
     }
-}
+
