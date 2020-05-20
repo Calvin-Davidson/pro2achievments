@@ -9,3 +9,14 @@ C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\pro2achievment
 C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\pro2achievments\goud\roulette\obj\Debug\netcoreapp3.0\roulette.AssemblyInfo.cs
 C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\pro2achievments\goud\roulette\obj\Debug\netcoreapp3.0\roulette.dll
 C:\Users\calvi\OneDrive\Documenten\ma\bewijzenmap\periode1.1\pro2\pro2achievments\goud\roulette\obj\Debug\netcoreapp3.0\roulette.pdb
+D:\Bestanden\projects\CS\goud\roulette\bin\Debug\netcoreapp3.0\roulette.exe
+D:\Bestanden\projects\CS\goud\roulette\bin\Debug\netcoreapp3.0\roulette.deps.json
+D:\Bestanden\projects\CS\goud\roulette\bin\Debug\netcoreapp3.0\roulette.runtimeconfig.json
+D:\Bestanden\projects\CS\goud\roulette\bin\Debug\netcoreapp3.0\roulette.runtimeconfig.dev.json
+D:\Bestanden\projects\CS\goud\roulette\bin\Debug\netcoreapp3.0\roulette.dll
+D:\Bestanden\projects\CS\goud\roulette\bin\Debug\netcoreapp3.0\roulette.pdb
+D:\Bestanden\projects\CS\goud\roulette\obj\Debug\netcoreapp3.0\roulette.csprojAssemblyReference.cache
+D:\Bestanden\projects\CS\goud\roulette\obj\Debug\netcoreapp3.0\roulette.AssemblyInfoInputs.cache
+D:\Bestanden\projects\CS\goud\roulette\obj\Debug\netcoreapp3.0\roulette.AssemblyInfo.cs
+D:\Bestanden\projects\CS\goud\roulette\obj\Debug\netcoreapp3.0\roulette.dll
+D:\Bestanden\projects\CS\goud\roulette\obj\Debug\netcoreapp3.0\roulette.pdb

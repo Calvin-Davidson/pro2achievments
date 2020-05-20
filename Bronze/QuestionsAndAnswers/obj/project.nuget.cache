@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "HpRpdQOmKo31E20hM2YXUlXDsFEad6n2qG5TkE9Tlf6gKLy0FzfR+pDt7NavIeLQ4Y6rhKmb9Gh+LxcEEoRXtw==",
+  "success": true,
+  "projectFilePath": "D:\\Bestanden\\projects\\CS\\Bronze\\QuestionsAndAnswers\\QuestionsAndAnswers.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Calvin\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\Calvin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\Calvin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\Calvin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.2\\microsoft.netcore.app.host.win-x64.3.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

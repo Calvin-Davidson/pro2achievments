@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "kR4PDNNrHnJ5mIlSW+Zo8oUpHZgukgnXcj1M68A3rov0ONbs+1v4rzOCh7J44Mfh2Uhg7t/MQmnZjr0TiT1GBQ==",
+  "success": true,
+  "projectFilePath": "D:\\Bestanden\\projects\\CS\\goud\\DungeonCrawler\\dungeonCrawler.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Calvin\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\Calvin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\Calvin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\Calvin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.2\\microsoft.netcore.app.host.win-x64.3.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
