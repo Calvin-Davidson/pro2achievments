@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
+using System.Linq;
 using System.Numerics;
 using System.Runtime.Intrinsics.X86;
 using System.Text;
@@ -15,7 +16,7 @@ namespace dungeonCrawler
 
         public Grid()
         {
-            new GridBuilder(grid);
+            new GridBuilder(grid, this);
             new GridObjectFiller(grid);
         }
 
@@ -49,6 +50,9 @@ namespace dungeonCrawler
                         case 'M':
                             Console.ForegroundColor = ConsoleColor.Magenta;
                             break;
+                        case '+':
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            break;
                         default:
                             append = true;
                             str.Append(grid[x, y]);
@@ -69,6 +73,20 @@ namespace dungeonCrawler
 
                 Console.Out.WriteLineAsync();
             }
+        }
+
+        public bool isWall(Vector2d location)
+        {
+            if (location.y >= 0 && location.y < grid.GetLength(1))
+            {
+                if (location.x >= 0 && location.x < grid.GetLength(0))
+                {
+                    char[] walls = new char[] {'#', '┐', '┌', '└', '┘', '─', '│', '┼', '┴', '┬', '├','┤'};
+                    if (walls.Contains(grid[location.x, location.y])) return true;
+                }
+            }
+
+            return false;
         }
     }
 }

@@ -5,6 +5,8 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Timers;
+using dungeonCrawler.Enemy;
+using Microsoft.VisualBasic;
 
 namespace dungeonCrawler
 {
@@ -13,6 +15,7 @@ namespace dungeonCrawler
         private Grid grid;
         private Player player;
         private Movement movement;
+        private EnemyManager _enemyManager;
         private List<Monster> monsters = new List<Monster>();
         private bool finished = false;
 
@@ -25,12 +28,14 @@ namespace dungeonCrawler
             Program program = new Program();
             program.grid = new Grid();
             program.player = new Player();
-            program.movement = new Movement(program.player, program.grid);
+            program._enemyManager = new EnemyManager(program.grid.GetGrid());
+            program._enemyManager.loadEnemies();
+            program.movement = new Movement(program.player, program.grid, program._enemyManager);
 
             Console.WriteLine("Welkom to dungeon crawler\nPress space to continue");
 
             Console.ReadKey();
-            
+
             program.start();
         }
 

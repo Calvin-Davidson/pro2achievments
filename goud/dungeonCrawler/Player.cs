@@ -7,7 +7,7 @@ namespace dungeonCrawler
         public int x = 1;
         public int y = 1;
 
-        private int health = 100;
+        private int health = 4;
 
         public void Undraw()
         {
@@ -22,6 +22,5 @@ namespace dungeonCrawler
             Console.Write('P');
             Console.ForegroundColor = ConsoleColor.White;
         }
-        
     }
 }
