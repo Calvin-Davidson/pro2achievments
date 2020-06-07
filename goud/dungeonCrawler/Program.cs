@@ -1,5 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
 using System.Timers;
 
 namespace dungeonCrawler
@@ -14,6 +18,7 @@ namespace dungeonCrawler
 
         static void Main(string[] args)
         {
+            Console.CursorVisible = false;
             Console.SetWindowSize(Console.LargestWindowWidth / 2 + 10, Console.LargestWindowHeight / 2 + 10);
             Console.Clear();
 
@@ -25,7 +30,7 @@ namespace dungeonCrawler
             Console.WriteLine("Welkom to dungeon crawler\nPress space to continue");
 
             Console.ReadKey();
-
+            
             program.start();
         }
 
@@ -36,8 +41,6 @@ namespace dungeonCrawler
 
         private void start()
         {
-            Console.Clear();
-
             grid.PaintGrid();
             Input();
         }
@@ -46,7 +49,7 @@ namespace dungeonCrawler
         {
             while (finished == false)
             {
-                ConsoleKey key = Console.ReadKey().Key;
+                ConsoleKey key = Console.ReadKey(true).Key;
                 switch (key.ToString())
                 {
                     case "W":

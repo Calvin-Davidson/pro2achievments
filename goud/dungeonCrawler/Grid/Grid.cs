@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Drawing;
 using System.Numerics;
 using System.Runtime.Intrinsics.X86;
+using System.Text;
 
 namespace dungeonCrawler
 {
     public class Grid
     {
-        private char[,] grid = new char[Console.LargestWindowWidth / 3 - 1, Console.LargestWindowHeight / 3];
+        private readonly char[,] grid = new char[Console.LargestWindowWidth / 3 - 1, Console.LargestWindowHeight / 3];
 
 
         public Grid()
@@ -16,41 +19,55 @@ namespace dungeonCrawler
             new GridObjectFiller(grid);
         }
 
-        public char[,] getGrid()
+        public char[,] GetGrid()
         {
             return this.grid;
         }
 
 
-        public void PaintGrid()
+        public async void PaintGrid()
         {
+            Console.Clear();
+            StringBuilder str = new StringBuilder();
+
             for (var y = 0; y < grid.GetLength(1); y++)
             {
                 for (var x = 0; x < grid.GetLength(0); x++)
                 {
+                    bool append = false;
                     switch (grid[x, y])
                     {
                         case 'P':
-                            Console.ForegroundColor = ConsoleColor.Blue;
-                            break;
-                        case '$':
                             Console.ForegroundColor = ConsoleColor.Green;
                             break;
+                        case '$':
+                            Console.ForegroundColor = ConsoleColor.Yellow;
+                            break;
                         case 'H':
-                            Console.ForegroundColor = ConsoleColor.Magenta;
+                            Console.ForegroundColor = ConsoleColor.Red;
                             break;
                         case 'M':
-                            Console.ForegroundColor = ConsoleColor.DarkRed;
+                            Console.ForegroundColor = ConsoleColor.Magenta;
                             break;
                         default:
-                            Console.ForegroundColor = ConsoleColor.White;
+                            append = true;
+                            str.Append(grid[x, y]);
                             break;
                     }
 
-                    Console.Write(grid[x, y]);
+                    if (!append)
+                    {
+                        await Console.Out.WriteAsync(grid[x, y]);
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.White;
+                        await Console.Out.WriteAsync(str);
+                        str.Clear();
+                    }
                 }
 
-                Console.WriteLine();
+                Console.Out.WriteLineAsync();
             }
         }
     }

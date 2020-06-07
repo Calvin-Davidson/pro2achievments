@@ -23,17 +23,14 @@ namespace dungeonCrawler
             if (dir == Direction.left) tempPos.X -= 1;
 
             // can move?
-            if (_grid.getGrid()[(int) tempPos.X, (int) tempPos.Y] != '#')
+            if (_grid.GetGrid()[(int) tempPos.X, (int) tempPos.Y] != '#')
             {
-                _grid.getGrid()[_player.x, _player.y] = ' ';
-                
+                _player.Undraw();
+                _grid.GetGrid()[_player.x, _player.y] = ' ';
                 _player.x = (int) tempPos.X;
                 _player.y = (int) tempPos.Y;
-
-                _grid.getGrid()[_player.x, _player.y] = 'P';
-
-                Console.Clear();
-                _grid.PaintGrid();
+                _grid.GetGrid()[_player.x, _player.y] = 'P';
+                _player.Draw();
             }
         }
     }
